@@ -1,0 +1,14 @@
+| File | What it is |
+|---|---|
+| `Paddy_Yield_Prediction.ipynb` | Full ML workflow: cleaning → EDA → feature optimization → 5 models → test metrics → key factors → recommendation |
+| `Hybrid_Model_From_Scratch.ipynb` | The hybrid stacking model hand-coded in NumPy, explained step by step and checked against scikit-learn |
+| `paddy_model.pkl` | Trained hybrid stacking model (created by the notebook) |
+| `app.py` | Streamlit web app (front end) |
+| `paddydataset.csv` | UCI Paddy Dataset (https://doi.org/10.24432/C55W3J) |
+
+## Run locally
+```bash
+pip install -r requirements.txt
+streamlit run app.py
+```
+Opens at http://localhost:8501
